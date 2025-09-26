@@ -5,18 +5,18 @@ from .models import Patient, Insurance, MedicalRecord
 
 
 class PatientSerializer(serializers.ModelSerializer):
-    class meta:
+    class Meta:
         model = Patient
         fields = '__all__'
 
 
 class InsuranceSerializer(serializers.ModelSerializer):
-    class meta:
+    class Meta:
         model = Insurance
         fields = '__all__'
 
 
 class MedicalRecordSerializer(serializers.ModelSerializer):
-    class meta:
+    class Meta:
         model = MedicalRecord
         fields = '__all__'
